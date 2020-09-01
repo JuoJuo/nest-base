@@ -7,3 +7,13 @@ export class AppService {
     return 'Hello World!';
   }
 }
+action = {
+  payload: {
+    payload: {
+      workOrder: 'xxxx',
+      asset: 'yyy',
+      isEditWorkOrder: 'zzzz',
+      showMessage:() => () => { },
+    }
+  }
+}

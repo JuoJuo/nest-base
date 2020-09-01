@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-
+const users = [];
 @Injectable()
 export class UserService implements OnModuleInit {
   onModuleInit() {
@@ -7,15 +7,22 @@ export class UserService implements OnModuleInit {
   }
 
   async userList(): Promise<any[]> {
-    return [
-      {
-        id: 0,
-        name: '张三',
-      },
-      {
-        id: 1,
-        name: '李四',
-      },
-    ];
+    return users;
+  }
+
+  async createUser(): Promise<any[]> {
+    return [];
+  }
+
+  async deleteUser(): Promise<any[]> {
+    return [];
+  }
+
+  async patchUser(): Promise<any[]> {
+    return [];
+  }
+
+  async putUser(): Promise<any[]> {
+    return [];
   }
 }
